@@ -2,6 +2,7 @@ import axios from 'axios';
 import type { User, UserDTO } from '../types/user';
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+console.log("ENV URL:", import.meta.env.VITE_API_BASE_URL);
 
 const api = axios.create({
   baseURL: BASE_URL,
