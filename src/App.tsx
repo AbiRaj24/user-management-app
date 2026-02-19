@@ -56,7 +56,7 @@ export default function App() {
               <div className="p-2 bg-brand-500/10 rounded-xl border border-brand-500/20">
                 <UserCog size={22} className="text-brand-500" />
               </div>
-              <h1 className="text-2xl font-extrabold text-slate-100 tracking-tight">
+              <h1 className="text-md md:text-xl font-extrabold text-slate-100 tracking-tight">
                 User Management
               </h1>
             </div>
@@ -64,13 +64,13 @@ export default function App() {
               Manage your users with full CRUD operations
             </p>
           </div>
-          <Button onClick={openCreate} icon={<UserPlus size={16} />} size="lg">
+          <Button onClick={openCreate} icon={<UserPlus size={16} />} size="md">
             Add User
           </Button>
         </header>
 
         {/* Stats bar */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           {[
             { label: 'Total Users',  value: users.length,                      color: 'text-brand-500' },
             { label: 'Active Today', value: Math.min(users.length, 2),          color: 'text-emerald-400' },
